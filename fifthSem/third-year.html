@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- 5th Semester -->
+    <div class="container">
+      <h1>CGPA Calculator Sem-5</h1>
+      <!-- Icon to redirect -->
+      <a href="/index.html" target="_blank">
+        <img src="home-icon.png" alt="Redirect Icon" class="redirect-icon" />
+      </a>
+      <form id="cgpaForm5">
+        <div class="input-group">
+          <label for="subject1-5">Database System Grade:</label>
+          <input type="text" id="subject1-5" required />
+        </div>
+        <div class="input-group">
+          <label for="subject2-5">Theory Of Computation Grade:</label>
+          <input type="text" id="subject2-5" required />
+        </div>
+        <div class="input-group">
+          <label for="subject3-5">Software Engineering Grade:</label>
+          <input type="text" id="subject3-5" required />
+        </div>
+        <div class="input-group">
+          <label for="subject4-5">HCI Grade:</label>
+          <input type="text" id="subject4-5" required />
+        </div>
+        <div class="input-group">
+          <label for="subject5-5">Business Communication Grades:</label>
+          <input type="text" id="subject5-5" required />
+        </div>
+        <div class="input-group">
+          <label for="subject6-5">Lab Grades:</label>
+          <input type="text" id="subject6-5" required />
+        </div>
+        <div class="input-group">
+          <label for="subject7-5">Mini Project Grades:</label>
+          <input type="text" id="subject7-5" required />
+        </div>
+        <div class="input-group">
+          <label for="gradePoints5">4th Sem Total Grade Points:</label>
+          <input type="text" id="gradePoints5" required />
+        </div>
+        <button type="button" onclick="calculateCGPA5()">Calculate CGPA</button>
+      </form>
+      <div id="result5">
+        <h2>Sem 5</h2>
+        <div id="semGradePoints5">
+          <h2>Grade Points:(Current Sem) <span id="gradePointsDisplay5"></span></h2>
+        </div>
+        <div id="overallGradePoints">
+          <h2>
+             Grade Points (Cummulative Performance):
+            <span id="totalGradePointsDisplay5"></span>
+          </h2>
+        </div>
+        <h2>Your SGPA (Sem 5): <span id="sgpaValue5"></span></h2>
+        <h2>Your CGPA: <span id="cgpaValue5"></span></h2>
+      </div>
+    </div>
+
+    <!-- 6th Semester -->
+    <div class="container">
+      <h1>CGPA Calculator Sem-6</h1>
+      <form id="cgpaForm6">
+        <div class="input-group">
+          <label for="subject1-6">Compiler Design Grade::</label>
+          <input type="text" id="subject1-6" required />
+        </div>
+        <div class="input-group">
+          <label for="subject2-6">Computer Networks Grade:</label>
+          <input type="text" id="subject2-6" required />
+        </div>
+        <div class="input-group">
+          <label for="subject3-6">Machine Learning Grade:</label>
+          <input type="text" id="subject3-6" required />
+        </div>
+        <div class="input-group">
+          <label for="subject4-6">Internet Of Things Grade:</label>
+          <input type="text" id="subject4-6" required />
+        </div>
+        <div class="input-group">
+          <label for="subject5-6">Devlopment Engineering Grades:</label>
+          <input type="text" id="subject5-6" required />
+        </div>
+        <div class="input-group">
+          <label for="subject6-6">Lab Grades:</label>
+          <input type="text" id="subject6-6" required />
+        </div>
+        <div class="input-group">
+          <label for="subject7-6">Mini Project-II Grades:</label>
+          <input type="text" id="subject7-6" required />
+        </div>
+        <button type="button" onclick="calculateCGPA6()">Calculate CGPA</button>
+      </form>
+      <div id="result6">
+        <h2>Sem 6</h2>
+        <div id="semGradePoints6">
+          <h2>Grade Points(Current Sem): <span id="gradePointsDisplay6"></span></h2>
+        </div>
+        <div id="overallGradePoints6">
+          <h2>
+            Grade Points (Cummulative Performance):
+            <span id="totalGradePointsDisplay6"></span>
+          </h2>
+        </div>
+        <h2>Your SGPA (Sem 6): <span id="sgpaValue6"></span></h2>
+        <h2>Your CGPA: <span id="cgpaValue6"></span></h2>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
